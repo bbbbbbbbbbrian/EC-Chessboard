@@ -32,7 +32,6 @@ def setup_hardware():
         GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 def get_sensors():
-    """Scans the 8x8 matrix row-by-row and returns a map of {square: 0/1}."""
     sensors = {}
 
     for r_idx, r_pin in enumerate(ROW_PINS):
